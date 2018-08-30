@@ -38,7 +38,8 @@ Build the cache server image
 
 First, copy squid.conf.template to squid.conf, and change the variables.
 
-* `{{ docker_host }}` is your private docker registry host
+* `{{ registry_host }}` is your private docker registry host
+* `{{ registry_port }}` is your private docker registry port
 * `{{ cache_size }}` should be set to the cache size, in MB. According to the 
   squid docs, this should not exceed 80% of the disk. For example, 500000 is
   500GB.
